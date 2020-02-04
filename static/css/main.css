@@ -35,10 +35,13 @@ i {
   max-width: 50px;
 }
 
+/*====================================
+              game.html
+=====================================*/
 #game form {
   display: flex;
   justify-content: space-around;
-  align-items:flex-end;;
+  align-items:flex-end;
   text-align: center;
 
 }
@@ -55,5 +58,10 @@ i {
 
 #game form input:checked + label {
   border-color: blue;
-
+}
+/*============================================
+            edit.html
+==============================================*/
+form.edit{
+  display: none;
 }
