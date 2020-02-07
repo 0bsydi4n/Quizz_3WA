@@ -36,32 +36,50 @@ i {
 }
 
 /*====================================
-              game.html
+              menu.html
 =====================================*/
-#game form {
-  display: flex;
-  justify-content: space-around;
-  align-items:flex-end;
+#menu form p {
+
   text-align: center;
 
 }
 
-#game form label {
+#menu form p label {
   border: solid 3px black;
   width: 60%;
   background-color: lightgrey;
 }
 
-#game form input {
+#menu form p input {
   display: none
 }
 
-#game form input:checked + label {
+#menu form p input:checked + label {
   border-color: blue;
 }
+
 /*============================================
             edit.html
 ==============================================*/
-form.edit{
+form.edit {
   display: none;
+}
+
+/*============================================
+           game.html
+==============================================*/
+
+#game #reponse label {
+  border: solid 3px black;
+  width: 60%;
+  background-color: lightgrey;
+  text-align: center;
+}
+
+#game #reponse input {
+  display: none;
+}
+
+#game #reponse input:checked + label {
+  border: solid 6px yellow;
 }

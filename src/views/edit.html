@@ -1,22 +1,35 @@
-<input id="submit_addT" type=submit value="AJOUTER UN THEME">
-<form class="edit" id="formT" name="formT">
+<input id="submit_addT" type=submit value="AJOUTER/SUPPRIMER UN THEME">
+
+<input id="submit_addQ" type=submit value="AJOUTER/MODIFER UNE QUESTION">
+
+
+<!--Formulaire pour ajouter un thème -->
+<form class="edit" id="formT" name="formT" action="/#/edit">
+  <label for="idTheme">Thème</label>
+  <select name="idTheme" id="idTheme">
+  </select>
+  
   <label for="nameT">LE NOM DU THEME </label>
-  <input type="text" name="nameT" id="nameT"></br>
+  <input type="text" name="nameT" id="nameT">
+  
   <label for="imgT">Image </label>
-  <input type="text" name="nameT" id="nameT"></br>
-  <input type="text" name="nameT" id="nameT"></br>
+  <input type="file" name="imageT" id="imageT" accept="image/jpeg, image/png">
+
+  <input type="submit" id="submit_formT">
+  <input type="submit" id="submit_supprT" value="Supprimer">
 </form>
 
+<!--Formulaire de création/modification de question-->
 
-<input id="submit_addQ" type=submit value="AJOUTER UNE QUESTION">
-<form class="edit" id="formQ" name="formQ">
+<form class="edit" id="formQ" name="formQ" action="/#/edit">
+  <label for="idQuestion">Question à modifier</label>
+  <select name="idQuestion" id="idQuestion"></select>
+  
+  
   <label for="theme">Choisir le thème: </label>
-  <select name="theme" id="theme">
-    <option value="Marvel">Marvel</option>
-    <option value="DC">DC Universe</option>
-    <option value="Avatar">Avatar (Le Dernier maitre de l'air / Legend Of Korra)</option>
+  <select name="theme" id="theme" >
+    <option value="undefined"></option>
   </select>
-  </br>
 
   <label for="question">Ecrire la question: </label>
   <input type="text" name="question" id="question"> </br>
@@ -33,32 +46,6 @@
   <label for="proposition3">Ecrire une mauvaise réponse: </label>
   <input type="text" name="proposition3" id="prop3"> </br>
 
-  <input id="submit_formQ" type="submit" value="Valider">
-</form>
-
-<input id="submit_modifyQ" type=submit value="MODIFIER UNE QUESTION">
-<form class="edit" id="form_modifyQ">
-  <label for="idQuestion">Question à modifier</label>
-  <select name="idQuestion" id="idQuestion">
-    </select>
-  <label for="theme">Le thème </label>
-  <select name="theme" id="theme">
-  </select>
-  <label for="question">La question </label>
-  <input type="text" name="question" id="question">
-
-  <label for="reponse">La bonne réponse </label>
-  <input type="text" name="reponse" id="reponse">
-
-  <label for="proposition1">proposition </label>
-  <input type="text" name="proposition1" id="prop1">
-
-  <label for="proposition2">proposition </label>
-  <input type="text" name="proposition2" id="prop2">
-
-  <label for="proposition3">proposition </label>
-  <input type="text" name="proposition3" id="prop3">
-
-  <input id="submit_formQ" type="submit" value="Valider">
-
+  <input id="submit_formQ" type="button" value="Valider">
+  <input id="submit_supprQ" type="button" value="Supprimer">
 </form>

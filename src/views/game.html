@@ -1,22 +1,11 @@
 <div id="game">
-  <h3></h3>
-  <form name="formR">
-
-    <input type="radio" name="Rep1" value="1" id="A">
-    <label for="A" id="labelA">Le Fauve</label>
-
-
-    <input type="radio" name="Rep1" value="2" id="B">
-    <label for="B" id="labelB">Angel</label>
-
-
-    <input type="radio" name="Rep1" value="3" id="C">
-    <label for="C" id="labelC">La Sorciere Rouge</label>
-
-
-    <input type="radio" name="Rep1" value="4" id="D">
-    <label for="D" id="labelD">Charles Xavier</label>
-
-    <input type="submit" style="display: flex" id="submit_formR" value="test">
-  </form>
+  <h3 id="title"></h3>
+  <h2 id="question"></h2>
+  <form id="reponse"></form>
+  <input type="button" value="suivant" id="submit_next">
+  <div id="resultat">
+    <p id="bonneRep"></p>
+    <p id="note"></p>
+    <p id="score"></p>
+  </div>
 </div>

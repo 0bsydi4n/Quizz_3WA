@@ -3,6 +3,7 @@ import config from './config.js';
 import Home from '../src/controllers/Home.js';
 import Edit from '../src/controllers/Edit.js';
 import Game from '../src/controllers/Game.js';
+import Menu from '../src/controllers/Menu.js';
 
 // --------------------------------------------------------------------------------------------------------------------
 // INITIALISATION DE L'APPLICATION
@@ -28,10 +29,15 @@ function initializeRouter() {
     let GameController = new Game();
     GameController.show();
   });
-  app.mvc.router.add('/login', function () {
+  /*app.mvc.router.add('/login', function () {
     let LoginController = new Login();
     LoginController.show();
+  });*/
+  app.mvc.router.add('/menu', function () {
+    let MenuController = new Menu();
+    MenuController.show();
   });
+  
 
   app.mvc.router.check().addUriListener();
 
